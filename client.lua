@@ -36,6 +36,12 @@ local tireProfileTargets = {
     ["ClassS+4"] = {minIndex = 654, maxIndex = 665, speed = "190"},
     ["ClassS+5"] = {minIndex = 650, maxIndex = 653, speed = "190"},
 
+    ["ClassX1"] = {minIndex = 861, maxIndex = 900, speed = "250"},
+    ["ClassX2"] = {minIndex = 820, maxIndex = 860, speed = "238"},
+    ["ClassX3"] = {minIndex = 780, maxIndex = 819, speed = "225"},
+    ["ClassX4"] = {minIndex = 740, maxIndex = 779, speed = "213"},
+    ["ClassX5"] = {minIndex = 700, maxIndex = 739, speed = "200"},
+
     ["Moto1"] = {minIndex = 750, maxIndex = 800, speed = "220"},
     ["Moto2"] = {minIndex = 650, maxIndex = 750, speed = "180"},
     ["Moto3"] = {minIndex = 550, maxIndex = 650, speed = "160"},
