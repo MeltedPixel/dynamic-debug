@@ -35,6 +35,12 @@ local tireProfileTargets = {
     ["ClassS+3"] = {minIndex = 666, maxIndex = 677, speed = "190"},
     ["ClassS+4"] = {minIndex = 654, maxIndex = 665, speed = "190"},
     ["ClassS+5"] = {minIndex = 650, maxIndex = 653, speed = "190"},
+
+    ["Moto1"] = {minIndex = 750, maxIndex = 800, speed = "220"},
+    ["Moto2"] = {minIndex = 650, maxIndex = 750, speed = "180"},
+    ["Moto3"] = {minIndex = 550, maxIndex = 650, speed = "160"},
+    ["Moto4"] = {minIndex = 450, maxIndex = 550, speed = "130"},
+    ["Moto5"] = {minIndex = 350, maxIndex = 450, speed = "100"},
 }
 
 function GetTireProfileReference(profile)
