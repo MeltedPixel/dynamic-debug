@@ -36,17 +36,17 @@ local tireProfileTargets = {
     ["ClassS+4"] = {minIndex = 654, maxIndex = 665, speed = "190"},
     ["ClassS+5"] = {minIndex = 650, maxIndex = 653, speed = "190"},
 
-    ["ClassX1"] = {minIndex = 861, maxIndex = 900, speed = "250"},
-    ["ClassX2"] = {minIndex = 820, maxIndex = 860, speed = "238"},
-    ["ClassX3"] = {minIndex = 780, maxIndex = 819, speed = "225"},
-    ["ClassX4"] = {minIndex = 740, maxIndex = 779, speed = "213"},
-    ["ClassX5"] = {minIndex = 700, maxIndex = 739, speed = "200"},
+    ["ClassX1"] = {minIndex = 945, maxIndex = 980, speed = "241"},
+    ["ClassX2"] = {minIndex = 914, maxIndex = 944, speed = "235"},
+    ["ClassX3"] = {minIndex = 843, maxIndex = 913, speed = "230"},
+    ["ClassX4"] = {minIndex = 772, maxIndex = 842, speed = "224"},
+    ["ClassX5"] = {minIndex = 701, maxIndex = 771, speed = "218"},
 
-    ["Moto1"] = {minIndex = 750, maxIndex = 800, speed = "220"},
-    ["Moto2"] = {minIndex = 650, maxIndex = 750, speed = "180"},
-    ["Moto3"] = {minIndex = 550, maxIndex = 650, speed = "160"},
-    ["Moto4"] = {minIndex = 450, maxIndex = 550, speed = "130"},
-    ["Moto5"] = {minIndex = 350, maxIndex = 450, speed = "100"},
+    ["Moto1"] = {minIndex = 750, maxIndex = 850, speed = "200"},
+    ["Moto2"] = {minIndex = 650, maxIndex = 750, speed = "170"},
+    ["Moto3"] = {minIndex = 550, maxIndex = 650, speed = "155"},
+    ["Moto4"] = {minIndex = 450, maxIndex = 550, speed = "140"},
+    ["Moto5"] = {minIndex = 350, maxIndex = 450, speed = "120"},
 }
 
 function GetTireProfileReference(profile)
@@ -89,7 +89,7 @@ function GetCachedPI(veh)
     if cachedModel ~= model or not cachedPI then
         cachedModel = model
         local success, result = pcall(function()
-            return exports["legacydmc_dynamic"]:getPerformanceIndex(model)
+            return exports["legacydmc_dynamic"]:getPerformanceIndex(model, nil, nil, nil, nil, nil, nil)
         end)
         cachedPI = (success and result and result.PI) and result or nil
     end
